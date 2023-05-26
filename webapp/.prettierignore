@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+.data
+overlay/src/asset/data
+node_modules
+.idea
+.yarn
+
