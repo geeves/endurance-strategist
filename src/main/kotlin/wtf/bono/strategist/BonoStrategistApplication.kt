@@ -1,4 +1,4 @@
-package com.example.strategist
+package wtf.bono.strategist
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

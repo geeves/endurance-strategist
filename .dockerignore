@@ -1,0 +1,11 @@
+/.idea/
+/.gradle/
+/gradle/
+build
+*.iml
+*.md
+
+.pre-commit-config.yaml
+.gitignore
+.editorconfig
+
