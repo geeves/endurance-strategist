@@ -9,8 +9,8 @@
     "@js-joda/locale": "^4.8.10",
     "@js-joda/timezone": "^2.18.0",
     "@reduxjs/toolkit": "^1.9.5",
-    "grommet": "^2.33.1",
-    "grommet-icons": "^4.11.0",
+    "grommet": "^2.32.2",
+    "grommet-icons": "^4.10.0",
     "history": "^5.3.0",
     "js-big-decimal": "^1.4.1",
     "localforage": "^1.10.0",
@@ -20,7 +20,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.2",
     "sort-by": "^1.2.0",
-    "styled-components": "^6.0.5",
+    "styled-components": "^5.3.11",
     "web-vitals": "^3.4.0"
   },
   "devDependencies": {
@@ -51,7 +51,8 @@
   "scripts": {
     "build": "webpack build --mode=development",
     "build-dev": "npx webpack --no-watch --mode=development",
-    "deploy": "npx webpack serve --mode=development"
+    "deploy": "npx webpack serve --mode=development",
+    "webdev": "npx webpack --config webpack.dev.cjs --mode=development"
   },
   "eslintConfig": {},
   "browserslist": {

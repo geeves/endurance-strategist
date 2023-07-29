@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
+		"target": "es6",
 		"lib": [
 			"dom",
 			"dom.iterable",
@@ -18,9 +18,7 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": false,
-		"jsx": "react-jsx",
-		"jsxFactory": "h",
-		"jsxFragmentFactory": "Fragment"
+		"jsx": "react-jsx"
 	},
 	"include": [
 		"src"

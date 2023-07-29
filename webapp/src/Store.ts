@@ -1,8 +1,10 @@
-import {configureStore} from "@reduxjs/toolkit";
-// import setlistReducer from "./reducers/SetlistReducer";
+import { configureStore } from "@reduxjs/toolkit";
+import raceReducer from "./reducers/RaceReducer";
 
 export const store = configureStore({
-	reducer: {}
+	reducer: {
+		raceReducer: raceReducer
+	}
 });
 
 export default store;

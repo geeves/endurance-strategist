@@ -4,38 +4,14 @@ import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import store from "./Store";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Drivers from "./Drivers";
-import Overview from "./Overview";
-import Schedule from "./Schedule";
-
-// const router = createBrowserRouter([
-// 	{
-// 		path: "/",
-// 		element: <App />,
-// 		children: [
-// 			{
-// 				path: "/overview",
-// 				element: <Overview />
-// 			},
-// 			{
-// 				path: "/drivers",
-// 				element: <Drivers />
-// 			},
-// 			{
-// 				path: "schedule",
-// 				element: <Schedule />
-// 			}
-// 		]
-// 	}
-// ]);
+import React from "react";
 
 const container: HTMLElement = document.getElementById("root") as HTMLElement;
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 
 createRoot(container!).render(
 	<Provider store={store}>
-		<App/>
+		<App />
 	</Provider>
 );
 

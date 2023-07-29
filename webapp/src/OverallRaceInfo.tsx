@@ -1,15 +1,22 @@
-import React from "react";
-import { Text, TextInput } from "grommet";
+import { useDispatch, useSelector } from "react-redux";
+import { Text } from "grommet";
+
+function goddammit(bar: string) {
+
+}
 
 export default function OverallRaceInfo() {
-	const [value, setValue] = React.useState("");
+	const dispatch = useDispatch();
+	// @ts-ignore
+	let foo = useSelector((state) => state.raceReducer.raceInfo.duration);
+	console.log(foo)
 	return (
 		<>
 			<Text>Race Duration (minutes)</Text>
-			<TextInput
+			<input
 				placeholder="type here"
-				value={value}
-				onChange={(event) => setValue(event.target.value)}
+				value={0}
+				onChange={(event) => goddammit(event.target.value)}
 			/>
 		</>
 	);

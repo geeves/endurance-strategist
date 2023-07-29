@@ -21,7 +21,7 @@ module.exports = {
 		extensions: [".tsx", ".ts", ".js"]
 	},
 	output: {
-		filename: "bundle.js",
+		filename: "strategist.js",
 		// eslint-disable-next-line no-undef
 		path: path.resolve(`${__dirname}/public/`, "dist")
 	},
@@ -36,6 +36,6 @@ module.exports = {
 	},
 	watch: true,
 	watchOptions: {
-		ignored: '**/node_modules',
+		ignored: "**/node_modules",
 	},
 };
