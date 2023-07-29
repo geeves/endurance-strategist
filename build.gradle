@@ -1,12 +1,12 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id "org.springframework.boot" version "3.1.0"
-	id "io.spring.dependency-management" version "1.1.0"
-	id "org.jetbrains.kotlin.jvm" version "1.8.21"
-	id "org.jetbrains.kotlin.plugin.spring" version "1.8.21"
-	id "org.jetbrains.kotlin.plugin.jpa" version "1.8.21"
-	id "org.liquibase.gradle" version "2.0.4"
+	id "org.springframework.boot" version "3.1.2"
+	id "io.spring.dependency-management" version "1.1.1"
+	id "org.jetbrains.kotlin.jvm" version "1.9.0"
+	id "org.jetbrains.kotlin.plugin.spring" version "1.9.0"
+	id "org.jetbrains.kotlin.plugin.jpa" version "1.9.0"
+	id "org.liquibase.gradle" version "2.2.0"
 }
 
 group = "wtf.bono"
@@ -30,8 +30,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
-	implementation("org.apache.logging.log4j:log4j-core:2.19.0")
-	testImplementation("org.apache.logging.log4j:log4j-slf4j-impl:2.19.0")
+	implementation("org.apache.logging.log4j:log4j-core:2.20.0")
+	testImplementation("org.apache.logging.log4j:log4j-slf4j-impl:2.20.0")
 
 //	runtimeOnly "org.postgresql:postgresql"
 	testImplementation "org.springframework.boot:spring-boot-starter-test"
