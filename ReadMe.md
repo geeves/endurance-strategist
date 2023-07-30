@@ -1,5 +1,7 @@
 # Endurance Strategist for iRacing
 
+Interested in [Contributing](Contributing.md)?
+
 ## What's this for?
 
 To rival features of the myriad of excellent Excel / Google Sheet Race
