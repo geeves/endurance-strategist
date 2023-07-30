@@ -1,0 +1,20 @@
+{
+  "name": "endurance-strategist",
+  "version": "1.0.0",
+  "description": "## What's this for?",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geeves/endurance-strategist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geeves/endurance-strategist/issues"
+  },
+  "homepage": "https://github.com/geeves/endurance-strategist#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@commitlint/types": "^17.4.4"
+  }
+}

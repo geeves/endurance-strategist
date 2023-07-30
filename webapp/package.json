@@ -1,5 +1,5 @@
 {
-  "name": "strategist",
+  "name": "endurance-strategist-web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -28,8 +28,6 @@
     "web-vitals": "^3.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@testing-library/jest-dom": "^5.17.0",
