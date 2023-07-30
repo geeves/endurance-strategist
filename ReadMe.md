@@ -28,7 +28,9 @@ It's a game of Excel telephone.
 
 ### Built with
 
-Postgres, Spring Boot w/ Kotlin, React w/ MUI and Typescript
+* Postgres
+* Spring Boot w/ Kotlin
+* React w/ MUI and Typescript
 
 ### Requirements
 
