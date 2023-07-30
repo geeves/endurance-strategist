@@ -32,7 +32,7 @@ Postgres, Spring Boot w/ Kotlin, React w/ MUI and Typescript
 
 ### Requirements
 
-Node 18, Java 20, Docker
+Node 18, Java 20, Docker, Pre-Commit
 
 * [Install Node](https://heynode.com/tutorial/install-nodejs-locally-nvm/) locally with [NVM](https://github.com/nvm-sh/nvm)
 * Install Java with [SDKMan](https://sdkman.io/install)
@@ -45,6 +45,22 @@ used as the next LTS approaches or as needed by Kotlin.
 Java 21, [the next LTS](https://www.infoworld.com/article/3689880/jdk-21-the-new-features-in-java-21.html) will release in September 2023.
 
 Plans for Node version: Uncertain at this time. LTS is most likely.
+
+#### Pre-Commit
+
+To contribute you should have Pre-Commit Installed.
+This will run hooks for general file cleanup, Prettier,
+lint, checkstyle, unit tests, etc.
+
+https://pre-commit.com/
+
+Install with [Home Brew](https://formulae.brew.sh/formula/pre-commit)
+
+    $ brew install pre-commit
+
+Alternatively with pip
+
+    $ pip install pre-commit
 
 
 
