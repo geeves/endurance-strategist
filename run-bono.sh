@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Simply starts SpringBoot Application in Docker
+# Add to docker-entrypoint.d
 
 echo "${PATH}"
 java -version

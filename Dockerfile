@@ -40,12 +40,14 @@ FROM nginx:alpine
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm/bin
 ENV PATH="${PATH}:${JAVA_HOME}"
 
+# TODO: Create custom slim JRE via jdeps & jlink save some MBs
 COPY --from=jre /usr/lib/jvm/default-jvm/ /usr/lib/jvm/default-jvm/
 
 COPY run-bono.sh /docker-entrypoint.d/
 COPY default.conf /etc/nginx/conf.d/
 COPY --from=web-build /usr/src/webapp/public/ /data/www/
 
+# AUTOSTART SpringBoot Application when image boots
 RUN chmod a+x /docker-entrypoint.d/run-bono.sh
 
 ## https://gihub.com/moby/moby/issues/37965
