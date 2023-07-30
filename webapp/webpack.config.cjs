@@ -34,8 +34,8 @@ module.exports = {
 		compress: true,
 		port: 9000,
 	},
-	watch: true,
-	watchOptions: {
-		ignored: '**/node_modules',
-	},
+	// watch: false,
+	// watchOptions: {
+	// 	ignored: '**/node_modules',
+	// },
 };

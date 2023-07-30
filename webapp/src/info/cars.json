@@ -1,21 +1,58 @@
 {
-	"all" : [
+	"GTP" : [
 		{
-			"id" : 1,
-			"name" : "BMW M4 GT3",
-			"carClass" : "GT3",
-			"fuelMax" : "120"
+			"carId" : 7,
+			"carName" : "BMW LMDh",
+			"carClass" : "GTP",
+			"fuelMax" : "70"
 		},{
-			"id" : 2,
-			"name" : "Porsche 911 GT3-R",
+			"carId" : 8,
+			"carName" : "Cadillac",
+			"carClass" : "GTP",
+			"fuelMax" : "70"
+		}
+	],
+	"LMP2" : [{
+		"carId" : 9,
+		"carName" : "LMP 2",
+		"carClass" : "LMP2",
+		"fuelMax" : "80.0"
+	}],
+	"GT3" : [
+		{
+			"carId" : 1,
+			"carName" : "BMW M4 GT3",
 			"carClass" : "GT3",
-			"fuelMax" : "120"
+			"fuelMax" : "100.0"
+		},{
+			"carId" : 2,
+			"carName" : "Porsche 911 GT3-R",
+			"carClass" : "GT3",
+			"fuelMax" : "99.0"
 		},
 		{
-			"id" : 3,
-			"name" : "Ferrari 488 GT3 EVO",
+			"carId" : 3,
+			"carName" : "Ferrari 488 GT3 EVO",
 			"carClass" : "GT3",
-			"fuelMax" : "110.16"
+			"fuelMax" : "101.0"
+		},
+		{
+			"carId" : 4,
+			"carName" : "Mercedes GT3 EVO",
+			"carClass" : "GT3",
+			"fuelMax" : "101.0"
+		},
+		{
+			"carId" : 5,
+			"carName" : "Lamborghini",
+			"carClass" : "GT3",
+			"fuelMax" : "100.0"
+		},
+		{
+			"carId" : 6,
+			"carName" : "Audi",
+			"carClass" : "GT3",
+			"fuelMax" : "95.0"
 		}
 	]
 }

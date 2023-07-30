@@ -1,25 +1,38 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
 const raceReducer = createSlice({
-	name: "raceinfo",
+	name: "raceEvent",
 	// @ts-ignore
 	initialState: {
-		raceInfo: {
+		raceEvent: {
 			duration: 0
 		}
 	},
 	reducers: {
-		generate: (state) => {
+		handleRaceStartOverride: (state) => {},
+		handleSessionStart: (state) => {},
+		handlePractice: (state) => {},
+		handleQualifying: (state) => {},
+		handleGameRaceStart: (state) => {},
+		handleGameRaceEnd: (state) => {},
+		handleRaceDuration: (state) => {
 			// @ts-ignore
 
 			// @ts-ignore
-			state.raceInfo = {
+			state.raceEvent = {
 				duration: 0
 			};
 		}
 	}
 });
 
-export const { generate } = raceReducer.actions;
+export const {
+	handleRaceStartOverride,
+	handleQualifying,
+	handlePractice,
+	handleGameRaceStart,
+	handleGameRaceEnd,
+	handleRaceDuration,
+	handleSessionStart
+} = raceReducer.actions;
 export default raceReducer.reducer;
