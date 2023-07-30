@@ -55,17 +55,21 @@ This also helps if it needs to be altered / fix afterward. The original source c
 
 Be mindful of your code. Keep it simple, stupid.
 
-Two key points, one for the front-end, one for the server-end.
+Few key points, one for the front-end, one for the server-end.
 
 * [JS-Joda](https://js-joda.github.io/js-joda/) for datetime manipulation. Do not introduce moment, luzon or any other JS DateTime library.
   * Yes, I know MUI requires DayJS. That's where it stops.
   * JS-Joda is identical to Java 8+'s `java.time` implementation.
     * Written by the same group behind JSR 310.
+    * One of those rare moments when you can almost  
+      copy and paste a class from one side to the other  
+      and it would work
 * Jackson for JSON Mapping. It's included with Spring Boot. 
-  * That shouldn't be the sole reason, but it's just the exec decision right now.
-  * I have worked on corporate projects that have included  
-    as many as 4 different JSON libraries added by different developers.  
-    Talk about insanity.
+  * It's the exec decision right now.
+* Be mindful of any further libraries and / or dependencies that are included.
+  * Be sure that it has a justifiable reason for inclusion.
+
+
 
 
 The rest
