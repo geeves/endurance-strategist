@@ -44,7 +44,7 @@ used as the next LTS approaches or as needed by Kotlin.
 
 Java 21, [the next LTS](https://www.infoworld.com/article/3689880/jdk-21-the-new-features-in-java-21.html) will release in September 2023.
 
-Plans for Node version: Uncertain at this time, would like to stay with LTS
+Plans for Node version: Uncertain at this time. LTS is most likely.
 
 
 
