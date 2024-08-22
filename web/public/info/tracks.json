@@ -1,0 +1,28 @@
+{
+	"trackList" : [
+		{
+			"circuitId" : 1,
+			"circuitName" : "24 Hours of Daytona",
+			"shortName" : "Daytona Road",
+			"circuitLength" : "5.729"
+		},
+		{
+			"circuitId" : 2,
+			"circuitName" : "12 Hours of Sebring",
+			"shortName" : "Sebring",
+			"circuitLength" : "6.019"
+		},
+		{
+			"circuitId" : 3,
+			"circuitName" : "24 Hours of Nürburgring",
+			"shortName" : "AWWWW FUCK!",
+			"circuitLength" : "25.38"
+		},
+		{
+			"circuitId" : 4,
+			"circuitName" : "24 Hours of Le Mans",
+			"shortName" : "Le Mans",
+			"circuitLength" : "13.626"
+		}
+	]
+}
