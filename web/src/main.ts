@@ -4,6 +4,7 @@ import Schedule from "./Schedule";
 import Layout from "./Layout";
 import Overview from "./Overview";
 import Roster from "./Roster";
+import RaceEvent from "./RaceEvent";
 
 
 
@@ -15,6 +16,12 @@ m.route(
 	root,
 	"/schedule",
 	{
+		"/race-event": {
+			render: () => {
+				// @ts-ignore
+				return m(Layout, m(RaceEvent))
+			}
+		},
 		"/overview": {
 			render: () => {
 				// @ts-ignore

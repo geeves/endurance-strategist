@@ -56,7 +56,14 @@ function computeEstimates(): StintEstimate {
 }
 
 function stintDriver() {
-	return driversInfo.roster.map(driver => m("option", { "data-id": driver.id, value: driver.id }, driver.name));
+	return driversInfo.roster.map(driver => m(
+		"option",
+		{
+			"data-id": driver.id,
+			value: driver.id
+		},
+		driver.name
+	));
 }
 
 

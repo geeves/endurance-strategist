@@ -1,4 +1,4 @@
-FROM amazoncorretto:20-alpine AS jre
+FROM amazoncorretto:21-alpine AS jre
 
 
 ##############################
@@ -29,7 +29,7 @@ WORKDIR /usr/src/webapp/
 COPY web/package*.json ./
 RUN npm ci
 COPY web/ ./
-RUN npm run build-dev
+RUN npm run build
 
 ##############################
 # NGINX.  Put JRE and Spring into application

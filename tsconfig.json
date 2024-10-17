@@ -22,8 +22,8 @@
 		"jsxFactory": "m"
 	},
 	"include": [
-		"src",
-		"src/declaration.d.ts"
+		"web/src",
+		"web/src/declaration.d.ts"
 	],
 	"typeRoots" : [
 		"./typings"
