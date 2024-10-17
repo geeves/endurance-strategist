@@ -26,9 +26,9 @@ RUN java -Djarmode=layertools -jar sb-fat.jar extract
 FROM node:18-alpine AS web-build
 
 WORKDIR /usr/src/webapp/
-COPY webapp/package*.json ./
+COPY web/package*.json ./
 RUN npm ci
-COPY webapp/ ./
+COPY web/ ./
 RUN npm run build-dev
 
 ##############################

@@ -3,7 +3,7 @@ const path = require("path");
 
 // eslint-disable-next-line no-undef
 module.exports = {
-	entry: "./src/main.tsx",
+	entry: "./src/main.ts",
 	module: {
 		rules: [
 			{
@@ -14,6 +14,11 @@ module.exports = {
 			{
 				test: /\.css$/i,
 				use: ["style-loader", "css-loader"],
+			},
+
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: 'asset/resource'
 			}
 		]
 	},
@@ -23,8 +28,10 @@ module.exports = {
 	output: {
 		filename: "strategist.js",
 		// eslint-disable-next-line no-undef
-		path: path.resolve(`${__dirname}/public/`, "dist")
+		path: path.resolve(`${__dirname}/public/`, "dist"),
+		assetModuleFilename: './[hash][ext][query]'
 	},
+	devtool: "inline-source-map",
 	devServer: {
 		allowedHosts: "auto",
 	
@@ -34,8 +41,14 @@ module.exports = {
 		compress: true,
 		port: 9000,
 	},
-	// watch: false,
-	// watchOptions: {
-	// 	ignored: '**/node_modules',
-	// },
+	cache: false,
+	watch: false,
+	watchOptions: {
+		ignored: '**/node_modules',
+		followSymlinks: true,
+	},
+	snapshot: {
+		managedPaths: [],
+		immutablePaths: [],
+	},
 };
