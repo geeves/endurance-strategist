@@ -1,0 +1,88 @@
+{
+	"specialEvents" : [
+		{
+			"specialEventId" : 1,
+			"specialEventName": "Daytona 24",
+			"startDate": "2025-01-17",
+			"endDate": "2025-01-19",
+			"circuitId" : 1
+		},
+		{
+			"specialEventId" : 2,
+			"specialEventName": "Bathurst 12",
+			"startDate": "2025-02-21",
+			"endDate": "2025-02-23",
+			"circuitId" : 7
+		},
+		{
+			"specialEventId" : 3,
+			"specialEventName": "Sebring 12",
+			"startDate": "2025-03-21",
+			"endDate": "2025-03-23",
+			"circuitId" : 2
+		},
+		{
+			"specialEventId" : 4,
+			"specialEventName": "Nürburgring 24h",
+			"startDate": "2025-06-06",
+			"endDate": "2025-06-08",
+			"circuitId" : 3
+		},
+		{
+			"specialEventId" : 5,
+			"specialEventName": "6 Hours Of The Glen",
+			"startDate": "2025-06-27",
+			"endDate": "2025-06-28",
+			"circuitId" : 6
+		},
+		{
+			"specialEventId" : 6,
+			"specialEventName": "Spa 24",
+			"startDate": "2025-07-11",
+			"endDate": "2025-07-13",
+			"circuitId" : 5
+		},
+		{
+			"specialEventId" : 7,
+			"specialEventName": "Portimao 1000",
+			"startDate": "2025-08-15",
+			"endDate": "2025-08-16",
+			"circuitId" : 11
+		},
+		{
+			"specialEventId" : 8,
+			"specialEventName": "Indy 6 Hour",
+			"startDate": "2025-09-05",
+			"endDate": "2025-09-06",
+			"circuitId" : 12
+		},
+		{
+			"specialEventId" : 9,
+			"specialEventName": "Bathurst 12",
+			"startDate": "2025-09-26",
+			"endDate": "2025-09-27",
+			"circuitId" : 7
+		},
+		{
+			"specialEventId" : 10,
+			"specialEventName": "Petit Le Mans",
+			"startDate": "2025-10-03",
+			"endDate": "2025-10-05",
+			"circuitId" : 10
+		},
+		{
+			"specialEventId" : 11,
+			"specialEventName": "Suzuka 1000km",
+			"startDate": "2025-11-14",
+			"endDate": "2025-11-16",
+			"circuitId" : 9
+		},
+		{
+			"specialEventId" : 12,
+			"specialEventName": "iRacing ROAR",
+			"startDate": "2025-01-10",
+			"endDate": "2025-01-11",
+			"circuitId" : 1
+		}
+	]
+}

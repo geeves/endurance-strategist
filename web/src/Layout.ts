@@ -37,8 +37,10 @@ const Layout = {
 				NavMenu,
 				m(EnduranceNav, [
 					m(NavElement, m(m.route.Link, { href: "/overview" }, "Overview")),
+					m(NavElement, m(m.route.Link, { href: "/race-info" }, "Race Info")),
 					m(NavElement, m(m.route.Link, { href: "/roster" }, "Roster")),
-					m(NavElement, m(m.route.Link, { href: "/schedule" }, "Schedule"))
+					m(NavElement, m(m.route.Link, { href: "/schedule" }, "Schedule")),
+					// m(NavElement, m(m.route.Link, { href: "/past-events" }, "Past Events")),
 				])),
 			m("section", vnode.children)
 		]);

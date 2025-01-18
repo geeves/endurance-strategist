@@ -2,27 +2,75 @@
 	"trackList" : [
 		{
 			"circuitId" : 1,
-			"circuitName" : "24 Hours of Daytona",
-			"shortName" : "Daytona Road",
-			"circuitLength" : "5.729"
+			"circuitName" : "Daytona Road",
+			"shortName" : "Daytona",
+			"circuitLength" : 5.729
 		},
 		{
 			"circuitId" : 2,
-			"circuitName" : "12 Hours of Sebring",
+			"circuitName" : "Sebring International Raceway - International",
 			"shortName" : "Sebring",
-			"circuitLength" : "6.019"
+			"circuitLength" : 6.019
 		},
 		{
 			"circuitId" : 3,
-			"circuitName" : "24 Hours of Nürburgring",
+			"circuitName" : "Nürburgring Combined - Gesamtstrecke 24h",
 			"shortName" : "AWWWW FUCK!",
-			"circuitLength" : "25.38"
+			"circuitLength" : 25.94
 		},
 		{
 			"circuitId" : 4,
-			"circuitName" : "24 Hours of Le Mans",
+			"circuitName" : "Circuit des 24 Heures du Mans - 24 Heures du Mans",
 			"shortName" : "Le Mans",
-			"circuitLength" : "13.626"
+			"circuitLength" : 13.626
+		},
+		{
+			"circuitId" : 5,
+			"circuitName" : "Circuit de Spa-Francorchamps - Endurance",
+			"shortName" : "Spa",
+			"circuitLength" : 7.0
+		},
+		{
+			"circuitId" : 6,
+			"circuitName" : "Watkins Glen",
+			"shortName" : "Watkins Glen",
+			"circuitLength" : 3.94
+		},
+		{
+			"circuitId" : 7,
+			"circuitName" : "Mount Panorama Circuit",
+			"shortName" : "Mount Panorama",
+			"circuitLength" : 6.21
+		},
+		{
+			"circuitId" : 8,
+			"circuitName" : "Silverstone Circuit - Grand Prix",
+			"shortName" : "Silverstone",
+			"circuitLength" : 5.89
+		},
+		{
+			"circuitId" : 9,
+			"circuitName" : "Suzuka International Racing Course - West w/chicane",
+			"shortName" : "Suzuka",
+			"circuitLength" : 3.46
+		},
+		{
+			"circuitId" : 10,
+			"circuitName" : "Road Atlanta - Full Course",
+			"shortName" : "Road Atlanta",
+			"circuitLength" : 4.08
+		},
+		{
+			"circuitId" : 11,
+			"circuitName" : "Algarve International Circuit - Grand Prix",
+			"shortName" : "Portimão",
+			"circuitLength" : 4.59
+		},
+		{
+			"circuitId" : 12,
+			"circuitName" : "Indianapolis Motor Speedway - Road Course",
+			"shortName" : "Indianapolis",
+			"circuitLength" : 3.92
 		}
 	]
 }

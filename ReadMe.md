@@ -17,6 +17,7 @@ It's a game of Excel telephone.
 
 * To live on its own website, free for general use
 * To be distributable for development, bug fixes, and independent use.
+* Ability to create own tracks, cars, events (currently focused on iRacing special events, but there are many independent events and other series (CONSPIT, etc.) that are not on this calendar.)
 
 ### Long-term Goals
 

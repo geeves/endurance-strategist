@@ -1,6 +1,7 @@
 export interface Driver {
-	id: number,
-	name: string
+	driverId: number,
+	driverName: string,
+	driverTimeZone: string,
 	iracingId: number,
 	irating: number,
 	color: string

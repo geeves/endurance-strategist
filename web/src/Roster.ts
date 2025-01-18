@@ -3,7 +3,7 @@ import m, { Component } from "mithril";
 import b from "bss";
 import addIcon from "./icons/add-alt.svg";
 import deleteIcon from "./icons/trash-alt-outline.svg";
-import {Driver} from "./Driver";
+import {Driver} from "./model/Driver";
 
 const RosterWrapper = "div" + b`
 `;

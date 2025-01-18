@@ -1,4 +1,5 @@
-import { DateTimeFormatter, LocalDateTime } from "@js-joda/core";
+import { DateTimeFormatter, LocalDate, LocalDateTime } from "@js-joda/core";
+import { SpecialEvent } from "../model/SpecialEvent";
 
 const dtPattern: string = "yyyy-MM-ddTHH:mm:ss";
 const precisePattern: string = "yyyy-MM-ddTHH:mm:ss.SSSZ";
@@ -45,6 +46,16 @@ export function intervalFifteenMinutes(): string[] {
 
 export function intervalTenMinutes(): string[] {
 	return ["00", "10", "20", "30", "40", "50"];
+}
+
+/**
+ * Must have startDate for all objects
+ * @param list
+ */
+export function sortByStartDate(list: any[]) : any[] {
+	return list.sort((a, b) =>
+		LocalDate.parse(a.startDate)
+		.compareTo(LocalDate.parse(b.startDate)));
 }
 
 

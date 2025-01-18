@@ -4,7 +4,8 @@ import Schedule from "./Schedule";
 import Layout from "./Layout";
 import Overview from "./Overview";
 import Roster from "./Roster";
-import RaceEvent from "./RaceEvent";
+import RaceInfo from "./RaceInfo";
+import PastEvents from "./PastEvents";
 
 
 
@@ -16,28 +17,34 @@ m.route(
 	root,
 	"/schedule",
 	{
-		"/race-event": {
+		"/race-info": {
 			render: () => {
 				// @ts-ignore
-				return m(Layout, m(RaceEvent))
+				return m(Layout, m(RaceInfo));
 			}
 		},
 		"/overview": {
 			render: () => {
 				// @ts-ignore
-				return m(Layout, m(Overview))
+				return m(Layout, m(Overview));
 			}
 		},
 		"/roster": {
 			render: () => {
 				// @ts-ignore
-				return m(Layout, m(Roster))
+				return m(Layout, m(Roster));
 			}
 		},
 		"/schedule": {
 			render: () => {
 				// @ts-ignore
-				return m(Layout, m(Schedule))
+				return m(Layout, m(Schedule));
+			}
+		},
+		"/past-events": {
+			render: () => {
+				// @ts-ignore
+				return m(Layout, m(PastEvents));
 			}
 		},
 	}

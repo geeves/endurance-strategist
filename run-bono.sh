@@ -4,6 +4,6 @@
 # Add to docker-entrypoint.d
 
 echo "${PATH}"
-java -version
-java org.springframework.boot.loader.JarLauncher &
+#java -version
+#java org.springframework.boot.loader.JarLauncher &
 exit 0
