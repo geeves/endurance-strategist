@@ -25,6 +25,10 @@ export function getLocalDateTime(datetime: string) {
 	return LocalDateTime.parse(datetime);
 }
 
+export function formatToHourMinute(datetime: LocalDateTime) {
+	return datetime.format(DateTimeFormatter.ofPattern("HH:mm"));
+}
+
 export function formatToTime(datetime: LocalDateTime) {
 	return datetime.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
 }

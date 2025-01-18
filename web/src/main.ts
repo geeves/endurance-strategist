@@ -6,46 +6,47 @@ import Overview from "./Overview";
 import Roster from "./Roster";
 import RaceInfo from "./RaceInfo";
 import PastEvents from "./PastEvents";
-
-
+import store from "./utils/Store";
 
 let root: any = document.getElementById("root");
 
-// m.mount(root, Schedule);
+function init() {
+	m.route(
+		root,
+		"/schedule",
+		{
+			"/race-info": {
+				render: () => {
+					// @ts-ignore
+					return m(Layout, m(RaceInfo));
+				}
+			},
+			"/overview": {
+				render: () => {
+					// @ts-ignore
+					return m(Layout, m(Overview));
+				}
+			},
+			"/roster": {
+				render: () => {
+					// @ts-ignore
+					return m(Layout, m(Roster));
+				}
+			},
+			"/schedule": {
+				render: () => {
+					// @ts-ignore
+					return m(Layout, m(Schedule));
+				}
+			},
+			"/past-events": {
+				render: () => {
+					// @ts-ignore
+					return m(Layout, m(PastEvents));
+				}
+			},
+		}
+	);
+}
 
-m.route(
-	root,
-	"/schedule",
-	{
-		"/race-info": {
-			render: () => {
-				// @ts-ignore
-				return m(Layout, m(RaceInfo));
-			}
-		},
-		"/overview": {
-			render: () => {
-				// @ts-ignore
-				return m(Layout, m(Overview));
-			}
-		},
-		"/roster": {
-			render: () => {
-				// @ts-ignore
-				return m(Layout, m(Roster));
-			}
-		},
-		"/schedule": {
-			render: () => {
-				// @ts-ignore
-				return m(Layout, m(Schedule));
-			}
-		},
-		"/past-events": {
-			render: () => {
-				// @ts-ignore
-				return m(Layout, m(PastEvents));
-			}
-		},
-	}
-);
+init();

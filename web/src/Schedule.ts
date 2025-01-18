@@ -2,7 +2,7 @@ import m from "mithril";
 // @ts-ignore
 import b from "bss";
 import { LocalDateTime } from "@js-joda/core";
-import { formatToTime, getLocalDateTime, RaceZones } from "./DateTime";
+import { formatToHourMinute, getLocalDateTime, RaceZones } from "./DateTime";
 
 const DriverSchedule = "ul" + b`
 	list-style: none;
@@ -37,7 +37,8 @@ const driversInfo = {
 		{ id: 1, name: "Obi-Wan Kenobi", averageLapTime: 241, timeZone: RaceZones.EST },
 		{ id: 2, name: "Luke Skywalker", averageLapTime: 241, timeZone: RaceZones.HST },
 		{ id: 3, name: "Kannan Jarrus", averageLapTime: 241, timeZone: RaceZones.PST },
-		{ id: 4, name: "Ezra Bridger", averageLapTime: 241, timeZone: RaceZones.CET }
+		{ id: 4, name: "Ezra Bridger", averageLapTime: 241, timeZone: RaceZones.CET },
+		{ id: 5, name: "Cal Kestis", averageLapTime: 241, timeZone: RaceZones.PST }
 	]
 };
 
@@ -78,7 +79,7 @@ function DriverSelection(): any {
 		t = t + stintEstimate.estimatedStintTime;
 		const end = startDateTime.plusSeconds(t);
 		s.push(m(DriverSelect, [
-			m(DriverLabel, `${num} - ${formatToTime(start)} to ${formatToTime(end)}`),
+			m(DriverLabel, `${num} - ${formatToHourMinute(start)} to ${formatToHourMinute(end)}`),
 			m("select", {
 					id: `stint-${num}`,
 					"data-stintnumber": num,

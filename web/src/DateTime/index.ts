@@ -1,5 +1,5 @@
 import {
-	formatToTime,
+	formatToHourMinute,
 	getLocalDateTime,
 	intervalFifteenMinutes,
 	RaceZones,
@@ -7,7 +7,7 @@ import {
 } from "./DateHandler";
 
 export {
-	formatToTime,
+	formatToHourMinute,
 	getLocalDateTime,
 	twentyFourHours,
 	intervalFifteenMinutes,

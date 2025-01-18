@@ -2,6 +2,11 @@ import m, { Component } from "mithril";
 // @ts-ignore
 import b from "bss";
 
+import Constants from "./Constants";
+import Connection from "./Connection";
+import Colors from "./Colors";
+import {State} from "./State";
+
 
 // @ts-ignore
 export function icon(svg) {
@@ -28,3 +33,11 @@ export function sortCarList(carList: Car[]): Car[] {
 		return 0;
 	});
 }
+
+export {
+	Constants,
+	Connection,
+	Colors,
+	State
+}
+

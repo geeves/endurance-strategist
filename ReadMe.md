@@ -1,5 +1,9 @@
 # Endurance Strategist for iRacing
 
+This is a Proof of Concept single user application with the goal of a SaaS centralized endurance planner that can be used by teams.
+
+The overall goal is to be able to tie-in to live iRacing data lap data that will give an accurate portrayal of how teams' lap teams perform.
+
 Interested in [Contributing](Contributing.md)?
 
 ## What's this for?

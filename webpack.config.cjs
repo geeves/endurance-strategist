@@ -37,11 +37,22 @@ module.exports = {
 	},
 	devtool: "inline-source-map",
 	devServer: {
+		server: "http",
+		client: {
+			progress : true
+		},
+		hot: "only",
 		allowedHosts: "auto",
 		static: {
 			directory: path.join(__dirname, "web/public"),
 		},
 		compress: true,
+		watchFiles: { paths: [
+			"web/src/*.ts",
+				"web/src/public/info/*.json",
+				"web/src/**/*.ts"
+			]
+		},
 		port: 9000,
 	},
 	cache: false,
