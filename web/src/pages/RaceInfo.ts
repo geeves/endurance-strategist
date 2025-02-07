@@ -4,9 +4,9 @@ import { v4 as uuidv4 } from "uuid";
 import * as localforage from "localforage";
 // @ts-ignore
 import * as specialEventList from "./info/special-events.json";
-import { Colors, Connection, Constants } from "./utils";
-import store from "./utils/Store";
-import Errors from "./utils/Errors";
+import { Colors, Connection, Constants } from "../utils";
+import store from "../utils/Store";
+import Errors from "../utils/Errors";
 
 const { db } = Connection;
 
@@ -39,7 +39,7 @@ const increment = () => {
 	// m.redraw();
 };
 
-const updateEventId = () => {
+const createNewEvent = () => {
 	// @ts-ignore
 	store.eventInfo.eventId = uuidv4();
 };
@@ -58,7 +58,7 @@ const RaceInfo: Component = {
 					m("span", {
 							onclick: () => {
 								increment();
-								updateEventId();
+								createNewEvent();
 								console.log("Create New Event");
 							},
 							style: {

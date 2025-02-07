@@ -1,0 +1,82 @@
+FROM gradle:8-jdk-alpine AS builder
+
+WORKDIR /home/gradle/src
+
+COPY --chown=gradle:gradle . .
+
+RUN gradle check build
+
+RUN cp /home/gradle/src/build/libs/strategist-0.0.1.jar strategist-0.0.1.jar
+RUN cp /home/gradle/src/build/libs/strategist-0.0.1-plain.jar strategist-0.0.1-plain.jar
+# RUN cp /home/gradle/src/build/libs/foo-plain.jar sb-plain.jar
+RUN #java -Djarmode=layertools -jar strategist-0.0.1.jar extract
+
+
+FROM amazoncorretto:23-alpine AS jre-build
+
+WORKDIR /deploy/
+
+COPY --from=builder /home/gradle/src/strategist-0.0.1.jar ./strategist-0.0.1.jar
+COPY --from=builder /home/gradle/src/strategist-0.0.1-plain.jar ./strategist-0.0.1-plain.jar
+
+RUN java -Djarmode=layertools -jar strategist-0.0.1.jar extract
+
+RUN ${JAVA_HOME}/bin/jdeps \
+    --ignore-missing-deps \
+    --multi-release 23 \
+    --print-module-deps \
+    --class-path="./dependencies/BOOT-INF/lib/*" \
+    --class-path="./dependencies/BOOT-INF/lib/*" \
+    strategist-.0.0.1-plain.jar > jre-deps.info
+
+RUN ${JAVA_HOME}/bin/jlink \
+    --compress 2 \
+    --strip-java-debug-attributes \
+    --no-header-files \
+    --no-man-pages \
+    --add-modules $(cat jre-deps.info) \
+    --output ./customjre
+
+
+FROM alpine:3.17
+
+ENV JAVA_HOME=/jre
+ENV PATH="${JAVA_HOME}:/usr/local/bin:${PATH}"
+
+RUN apk update
+
+RUN adduser --disabled-password bono \
+    && mkdir /static/ \
+    && mkdir /jre/
+
+FROM amazoncorretto:17-alpine3.17
+
+RUN apk update \
+    && apk add aws-cli
+
+RUN adduser --disabled-password bono \
+    && mkdir /jre/ \
+
+
+WORKDIR /
+
+COPY --from=jre /deploy/customjre/ ${JAVA_HOME}
+
+# https://gihub.com/moby/moby/issues/37965
+COPY --from=jre /deploy/dependencies/ ./
+RUN true
+COPY --from=jre /deploy/snapshot-dependencies/ ./
+RUN true
+COPY --from=jre /deploy/spring-boot-loader/ ./
+RUN true
+COPY --from=jre /deploy/application/ ./
+
+COPY run-bono.sh /
+RUN chmod a+x /run-bono.sh \
+    && chown bono /run-bono.sh \
+
+EXPOSE 8080
+
+USER bono
+ENTRYPOINT ["sh", "run-bono.sh"]
+CMD ["app"]

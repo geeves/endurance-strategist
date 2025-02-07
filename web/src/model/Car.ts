@@ -8,5 +8,6 @@ export interface Car {
 
 interface Bop {
 	powerAdjust: number,
-	fuel: number
+	fuel: number,
+	display: true
 }

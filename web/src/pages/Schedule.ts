@@ -2,7 +2,7 @@ import m from "mithril";
 // @ts-ignore
 import b from "bss";
 import { LocalDateTime } from "@js-joda/core";
-import { formatToHourMinute, getLocalDateTime, RaceZones } from "./DateTime";
+import { formatToHourMinute, getLocalDateTime, RaceZones } from "../DateTime";
 
 const DriverSchedule = "ul" + b`
 	list-style: none;

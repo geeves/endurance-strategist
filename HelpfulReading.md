@@ -9,3 +9,5 @@
 * Storage: https://pouchdb.com/getting-started.html
 
 * Use of CAFEBABE, CAFEDEAD, and FEEDFACE as fun defaults at times: https://radio-weblogs.com/0100490/2003/01/28.html
+
+* https://stackoverflow.com/questions/147181/how-can-i-convert-my-java-program-to-an-exe-file 

@@ -1,147 +1,172 @@
 {
-	"GTP" : [
+	"GTP": [
 		{
-			"carId" : 7,
-			"carName" : "BMW M Hybrid V8",
-			"carClass" : "GTP",
-			"fuelMax" : 70,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 7,
+			"carName": "BMW M Hybrid V8",
+			"carClass": "GTP",
+			"fuelMax": 70,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
-		},{
-			"carId" : 8,
-			"carName" : "Cadillac V-Series.R GTP",
-			"carClass" : "GTP",
-			"fuelMax" : 70,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+		},
+		{
+			"carId": 8,
+			"carName": "Cadillac V-Series.R GTP",
+			"carClass": "GTP",
+			"fuelMax": 70,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
-		},{
-			"carId" : 13,
-			"carName" : "Acura ARX-06 GTP",
-			"carClass" : "GTP",
-			"fuelMax" : 70,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+		},
+		{
+			"carId": 13,
+			"carName": "Acura ARX-06 GTP",
+			"carClass": "GTP",
+			"fuelMax": 70,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
-		},{
-			"carId" : 14,
-			"carName" : "Ferrari 499P",
-			"carClass" : "GTP",
-			"fuelMax" : 70,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+		},
+		{
+			"carId": 14,
+			"carName": "Ferrari 499P",
+			"carClass": "GTP",
+			"fuelMax": 70,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		}
 	],
-	"LMP2" : [{
-		"carId" : 9,
-		"carName" : "Dallara P217",
-		"carClass" : "LMP2",
-		"fuelMax" : 80.0
-	}],
-	"GT3" : [
+	"LMP2": [
 		{
-			"carId" : 1,
-			"carName" : "BMW M4 GT3",
-			"carClass" : "GT3",
-			"fuelMax" : 100.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 9,
+			"carName": "Dallara P217",
+			"carClass": "LMP2",
+			"fuelMax": 80.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": false
 			}
-		},{
-			"carId" : 2,
-			"carName" : "Porsche 911 GT3 R (992)",
-			"carClass" : "GT3",
-			"fuelMax" : 99.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
-			}
-		},
+		}
+	],
+	"GT3": [
 		{
-			"carId" : 3,
-			"carName" : "Ferrari 296 GT3",
-			"carClass" : "GT3",
-			"fuelMax" : 104.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 1,
+			"carName": "BMW M4 GT3",
+			"carClass": "GT3",
+			"fuelMax": 100.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		},
 		{
-			"carId" : 4,
-			"carName" : "Mercedes-AMG GT3 2020",
-			"carClass" : "GT3",
-			"fuelMax" : 101.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 2,
+			"carName": "Porsche 911 GT3 R (992)",
+			"carClass": "GT3",
+			"fuelMax": 99.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		},
 		{
-			"carId" : 5,
-			"carName" : "Lamborghini Huracán GT3 EVO",
-			"carClass" : "GT3",
-			"fuelMax" : 100.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 3,
+			"carName": "Ferrari 296 GT3",
+			"carClass": "GT3",
+			"fuelMax": 104.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		},
 		{
-			"carId" : 6,
-			"carName" : "Audi R8 LMS EVO II GT3",
-			"carClass" : "GT3",
-			"fuelMax" : 95.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 4,
+			"carName": "Mercedes-AMG GT3 2020",
+			"carClass": "GT3",
+			"fuelMax": 101.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		},
 		{
-			"carId" : 10,
-			"carName" : "Chevrolet Corvette Z06 GT3.R",
-			"carClass" : "GT3",
-			"fuelMax" : 95.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 5,
+			"carName": "Lamborghini Huracán GT3 EVO",
+			"carClass": "GT3",
+			"fuelMax": 100.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		},
 		{
-			"carId" : 11,
-			"carName" : "McLaren 720S GT3 EVO",
-			"carClass" : "GT3",
-			"fuelMax" : 95.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 6,
+			"carName": "Audi R8 LMS EVO II GT3",
+			"carClass": "GT3",
+			"fuelMax": 95.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		},
 		{
-			"carId" : 12,
-			"carName" : "Acura NSX GT3 EVO 22",
-			"carClass" : "GT3",
-			"fuelMax" : 95.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 10,
+			"carName": "Chevrolet Corvette Z06 GT3.R",
+			"carClass": "GT3",
+			"fuelMax": 95.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		},
 		{
-			"carId" : 15,
-			"carName" : "Ford Mustang GT3",
-			"carClass" : "GT3",
-			"fuelMax" : 95.0,
-			"bop" : {
-				"powerAdjust" : 0.0,
-				"fuel" : 100
+			"carId": 11,
+			"carName": "McLaren 720S GT3 EVO",
+			"carClass": "GT3",
+			"fuelMax": 95.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
+			}
+		},
+		{
+			"carId": 12,
+			"carName": "Acura NSX GT3 EVO 22",
+			"carClass": "GT3",
+			"fuelMax": 95.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
+			}
+		},
+		{
+			"carId": 15,
+			"carName": "Ford Mustang GT3",
+			"carClass": "GT3",
+			"fuelMax": 95.0,
+			"bop": {
+				"powerAdjust": 0.0,
+				"fuel": 100,
+				"display": true
 			}
 		}
 	]

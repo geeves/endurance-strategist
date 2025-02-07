@@ -1,24 +1,30 @@
 import m from "mithril";
 // @ts-ignore
-import Schedule from "./Schedule";
+import Schedule from "./pages/Schedule";
 import Layout from "./Layout";
-import Overview from "./Overview";
-import Roster from "./Roster";
-import RaceInfo from "./RaceInfo";
-import PastEvents from "./PastEvents";
-import store from "./utils/Store";
+import Overview from "./pages/Overview";
+import Roster from "./pages/Roster";
+import RaceInfo from "./pages/RaceInfo";
+import PastEvents from "./pages/PastEvents";
+import CreateEvent from "./pages/CreateEvent";
 
 let root: any = document.getElementById("root");
 
 function init() {
 	m.route(
 		root,
-		"/schedule",
+		"/race-info",
 		{
 			"/race-info": {
 				render: () => {
 					// @ts-ignore
 					return m(Layout, m(RaceInfo));
+				}
+			},
+			"/create-event": {
+				render: () => {
+					// @ts-ignore
+					return m(Layout, m(CreateEvent));
 				}
 			},
 			"/overview": {
@@ -44,7 +50,7 @@ function init() {
 					// @ts-ignore
 					return m(Layout, m(PastEvents));
 				}
-			},
+			}
 		}
 	);
 }

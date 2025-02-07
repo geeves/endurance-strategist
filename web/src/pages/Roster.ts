@@ -1,9 +1,9 @@
 import m, { Component } from "mithril";
 // @ts-ignore
 import b from "bss";
-import addIcon from "./icons/add-alt.svg";
-import deleteIcon from "./icons/trash-alt-outline.svg";
-import {Driver} from "./model/Driver";
+import addIcon from "../icons/add-alt.svg";
+import deleteIcon from "../icons/trash-alt-outline.svg";
+import {Driver} from "../model/Driver";
 
 const RosterWrapper = "div" + b`
 `;
